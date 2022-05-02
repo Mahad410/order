@@ -17,12 +17,19 @@
     main {
         position: relative;
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
     }
     
     .waves {
         position: absolute;
         top: 0;
+        right: 0;
+        left: 0;
+    }
+    
+    .waves img {
+        width: 100%;
+        height: auto;
     }
     
     .container {
@@ -42,8 +49,9 @@
     }
     
     .image img {
-        object-fit: contain;
-        image-rendering: crisp-edges;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
     }
     
     .intro {
@@ -75,8 +83,9 @@
         display: flex;
     }
     
-    .plan h4 {
+    .plan h2 {
         color: #1f2f56;
+        font-size: 1rem;
     }
     
     .plan_text p {
